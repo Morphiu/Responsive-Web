@@ -1,0 +1,139 @@
+img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+h1, h2, h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.game-content {
+  background-color: rgb(99, 99, 138);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  font-size: 25px;
+  text-align: justify;
+}
+
+#learn {
+  border: 2px dotted black;
+  padding: 10px;
+  margin: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  font-weight: 400;
+  text-align: center;
+}
+.card {
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  width: 95%;
+}
+.card h1 {
+  text-align: center;
+}
+
+.games-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.games {
+  border: 2px dotted blue;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+}
+
+.games:hover {
+  cursor: pointer;
+  transform:scale(1.1);
+  transition: 0.8s;
+  border-radius: 5px;
+  transition: 1s ease-in-out;
+}
+
+
+
+@media (max-width: 480px){
+  .card {
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+  }
+  .game-content {
+    background-color: rgb(99, 99, 138);
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  h1, h2{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 16px;
+  }
+
+  .games-container {
+    display: block;
+  }
+
+  #learn {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px){
+  .card {
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+  }
+  .game-content {
+    background-color: rgb(99, 99, 138);
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  h1, h2{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 16px;
+  }
+
+  .games-container{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .games{
+    width:80%;
+    height: 90%;
+  }
+
+  img {
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #learn {
+    width: 80%;
+  }
+}
+
+
